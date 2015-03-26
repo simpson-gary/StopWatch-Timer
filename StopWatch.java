@@ -1,17 +1,13 @@
 // Program Name:	StopWatch.java
-// Developer:				Gary Simpson 
-// Date:       					March 11, 2014
+// Developer:	Gary Simpson 
+// Date:       	March 11, 2014
 // Purpose:      	A Stop Watch App  
 /*								. 
                   TO DO:
                   1.  Code  Time dispaly to pause timer/stopwatch. after timer/stopwatch starts.
                   2.  Code  button change and unlock timer menu when Timer  stops.
                   3. 
-                  4. 
-                  5. 
-                  6. 
-                  7. 
-                  8. 
+
                   
                    CHANGE LOG:
                    1.3.1
@@ -44,31 +40,11 @@
                    */
 
 import java.awt.*;
-// import java.awt.Color;
-// import java.awt.Container;
-// import java.awt.Dimension;
-//  //import java.awt.Component;
-// import java.awt.GridLayout;
-// import java.awt.FlowLayout;
-// import java.awt.BorderLayout;
-//import java.awt.Font; // used for fonts pg 644
-
 import java.awt.event.*;
-// import java.awt.event.ActionEvent;
-// import java.awt.event.ActionListener;
-// import java.awt.event.ItemListener;
-
-// import java.io.File; // pg734
-// import java.io.FileNotFoundException; // pg 734 file read
-// import java.lang.IllegalStateException; //pg 734 file read
-
-
-//import javax.swing.*;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JPanel;
 import javax.swing.BorderFactory;
-//import javax.swing.border.EtchedBorder;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.Timer;
@@ -317,7 +293,7 @@ public class StopWatch extends JFrame implements ActionListener
       frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE ); // set frame exit on x clicked
       frame.setSize(FRAME_WIDTH, FRAME_HEIGHT); // set frame to sizes declared above. Set this before setting location.
       frame.setVisible(true);	// show frame
-   //frame.pack();
+   //frame.pack(); 
    //--NOT USED-- frame.setLocationRelativeTo(null); // sets the form location centered.
       Dimension screenSize =Toolkit.getDefaultToolkit().getScreenSize();
       Point bottomRight = new Point(screenSize.width, screenSize.height);
@@ -509,6 +485,5 @@ public class StopWatch extends JFrame implements ActionListener
          } // end milisecond != 0
       }  //  end method actionPerformed
    }  // end class timer Handler
-
 
 }  ///----- END PROGRAM
